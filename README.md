@@ -6,10 +6,10 @@
 
 ## Setup
 
-Fork and clone this repo
-complete the following exercises in the exercises file.
-commit often and push
-create a pull request on this repo
+- Fork and clone this repo
+- Complete the following exercises in the exercises file.
+- Commit often and push
+- Create a pull request on this repo
 
 
 ## Solution
