@@ -3,7 +3,7 @@
 # Print out the second student's name.
 # Print out the last student's name.
 
-# students = ['Kanye', 'Kim_K', 'Pete']
+students = ['Kanye', 'Kim_K', 'Pete']
 #     print(students[1])
 #     print(students[2])
 
@@ -44,24 +44,39 @@ print(f"I was born in {home_town['city']}, {home_town['state']} - population of 
 # "state = California"
 # "population = 58000"
 
+for key, val in home_town.items():
+  print( f"{key} = {val}" )
+
+
 
 # Exercise 6
 # Create an empty list named cohort.
-
+cohort = []
+# cohort = []
 # Using a for loop, add one dictionary to the cohort list for each student name. Each dictionary should have this shape:
+#  enumerate  --This lets you get the index of an element while iterating over a list
 
-#  {
+
+for index, student in enumerate(students):
+  cohort.append({
+    'student': student,
+    'fav_food': foods[index]
+  })
+
 #    'student': 'Tina',
 #    'fav_food' 'Cheeseburger'
 #  }
 # Iterate over cohort printing out each element.
-
+for student in cohort:
+  print(student)
 
 # Exercise 7
 # Using the list of students and list comprehension, assign to a variable named awesome_students a new list containing strings similar to this:
 # ["Tina is awesome!", "Fred is awesome!", "Wilma is awesome!"]
 # Iterate over awesome_students printing out each string.
 
+awesome_students = [f"{student}is awesome"]
+print(awesome_students)
 
 # Exercise 8
 # Using the tuple foods and list comprehension within a for loop, print each food string that contains the letter a.
